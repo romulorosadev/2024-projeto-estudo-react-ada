@@ -8,6 +8,7 @@
 }
 body{
   font-size: 100%;
+  color: #000;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 }
