@@ -4,8 +4,12 @@ export default function MyCounter(){
 
   const [counter, setCounter] = useState(0);
 
-   function aumentar(){
+  function aumentar(){
     setCounter(counter + 1);
+  }
+
+  function diminuir(){
+    setCounter(counter - 1);
   }
 
   return(
@@ -14,6 +18,7 @@ export default function MyCounter(){
 
       <h3 className=" text-white font-bold w-[10rem] text-center">CONTADOR: {counter}</h3>
 
+      <button onClick={diminuir} className="inline-block bg-black text-white font-bold p-4">diminuir</button>
     </div>
   )
 }
